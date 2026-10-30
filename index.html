@@ -3,91 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Timetable</title>
+    <title>Hotel Room Booking Form</title>
 </head>
 <body>
 
-    <!-- Outer Container Table -->
-    <table border="2" cellpadding="14" cellspacing="0" align="center">
-        <tr>
-            <td align="center">
-                <h3>College Timetable - CSE Department</h3>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <!-- Inner Timetable Table -->
-                <table border="2" cellpadding="7" align="center">
-                    <tr>
-                        <th>Day/Time</th>
-                        <th>9:00 - 10:00</th>
-                        <th>10:00 - 11:00</th>
-                        <th>11:00 - 12:00</th>
-                        <th>12:00 - 1:00</th>
-                        <th>1:00 - 2:00</th>
-                        <th>2:00 - 3:00</th>
-                        <th>3:00 - 4:00</th>
-                    </tr>
-                    <tr>
-                        <th>Monday</th>
-                        <td rowspan="2">Mathematics</td>
-                        <td>English</td>
-                        <td rowspan="3">Physics</td>
-                        <td>Break</td>
-                        <td colspan="2">Computer Lab</td>
-                        <td>Sports</td>
-                    </tr>
-                    <tr>
-                        <th>Tuesday</th>
-                        <td>C programming</td>
-                        <td>Break</td>
-                        <td colspan="2">Electronics Lab</td>
-                        <td>Library</td>
-                    </tr>
-                    <tr>
-                        <th>Wednesday</th>
-                        <td>Mathematics</td>
-                        <td>English</td>
-                        <td>Break</td>
-                        <td>Computer Network</td>
-                        <td colspan="2">
-                            <!-- Nested Lab Details Table -->
-                            <table border="1" width="100%">
-                                <tr align="center">
-                                    <th colspan="2">Lab details</th>
-                                </tr>
-                                <tr>
-                                    <td>BATCH A</td>
-                                    <td>DBMS LAB</td>
-                                </tr>
-                                <tr>
-                                    <td>BATCH B</td>
-                                    <td>OS LAB</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Thursday</th>
-                        <td colspan="2">Workshop</td>
-                        <td>Physics</td>
-                        <td>Break</td>
-                        <td>Mathematics</td>
-                        <td>English</td>
-                        <td>Seminar</td>
-                    </tr>
-                    <tr>
-                        <th>Friday</th>
-                        <td>Computer Networks</td>
-                        <td>English</td>
-                        <td>Physics</td>
-                        <td>Break</td>
-                        <td colspan="3">Project work</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+    <h1 align="center">Hotel Room Booking Form</h1>
+    
+    <form action="#" method="post" style="border: 2px solid black; width: 290px; margin: auto; padding: 10px;">
+        
+        <!-- Name -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <!-- Check-in Date -->
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin">
+        <br><br>
+
+        <!-- Check-out Date -->
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout">
+        <br><br>
+
+        <!-- Room Type -->
+        <label for="room">Room Type:</label>
+        <select id="room" name="room">
+            <option>Single Room</option>
+            <option>Double Room</option>
+            <option>Deluxe Room</option>
+        </select>
+        <br><br>
+
+        <!-- Number of Guests -->
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests">
+        <br><br>
+
+        <!-- Special Requests -->
+        <label for="requests">Special Requests:</label>
+        <br>
+        <textarea id="requests" name="requests" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <!-- Form Actions -->
+        <button type="submit">Book Now</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
 
 </body>
 </html>
